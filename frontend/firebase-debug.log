@@ -1,0 +1,52 @@
+[debug] [2021-07-27T19:39:59.883Z] ----------------------------------------------------------------------
+[debug] [2021-07-27T19:39:59.892Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-07-27T19:39:59.893Z] CLI Version:   9.16.0
+[debug] [2021-07-27T19:39:59.893Z] Platform:      win32
+[debug] [2021-07-27T19:39:59.894Z] Node Version:  v14.16.0
+[debug] [2021-07-27T19:39:59.897Z] Time:          Wed Jul 28 2021 01:09:59 GMT+0530 (India Standard Time)
+[debug] [2021-07-27T19:39:59.898Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-27T19:40:00.704Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-27T19:40:00.721Z] > authorizing via signed-in user (jhumuk.abc123@gmail.com)
+[debug] [2021-07-27T19:40:00.727Z] [iam] checking project allpicr for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-07-27T19:40:00.747Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/allpicr:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-07-27T19:40:02.761Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 27 Jul 2021 19:40:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1358","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-27T19:40:02.770Z] > refreshing access token with scopes: []
+[debug] [2021-07-27T19:40:02.772Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-27T19:40:03.277Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 27 Jul 2021 19:40:04 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-27T19:40:03.419Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/allpicr [none]
+[debug] [2021-07-27T19:40:04.111Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/allpicr 200
+[debug] [2021-07-27T19:40:04.112Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/allpicr {"projectId":"allpicr","projectNumber":"40418890201","displayName":"allpicr","name":"projects/allpicr","resources":{"hostingSite":"allpicr"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'allpicr'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-07-27T19:40:04.139Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-27T19:40:04.140Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-27T19:40:04.499Z] <<< HTTP RESPONSE 200 {"date":"Tue, 27 Jul 2021 19:40:05 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-27T19:40:04.622Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/allpicr/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-07-27T19:40:06.908Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 27 Jul 2021 19:40:07 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[allpicr]: beginning deploy... 
+[debug] [2021-07-27T19:40:07.404Z] Error: EPERM: operation not permitted, scandir 'C:/Users/Dell/Desktop/WEB PROJECTS/auth-14-finished/auth-14-finished/frontend/build/index.html'
+    at Object.readdirSync (fs.js:1021:3)
+    at GlobSync._readdir (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:286:41)
+    at GlobSync._readdirInGlobStar (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:243:17)
+    at GlobSync._readdir (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:274:17)
+    at GlobSync._processReaddir (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:135:22)
+    at GlobSync._process (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:130:10)
+    at GlobSync._processGlobStar (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:378:10)
+    at GlobSync._process (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:128:10)
+    at new GlobSync (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:46:10)
+    at Function.globSync [as sync] (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\glob\sync.js:24:10)
+    at Object.listFiles (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\listFiles.js:6:19)
+    at runDeploys (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:42:35)
+    at deploy (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\hosting\deploy.js:73:12)
+    at _chain (C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:23:40)
+    at C:\Users\Dell\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:16
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+[error] 
+[error] Error: An unexpected error has occurred.
